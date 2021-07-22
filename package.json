@@ -12,8 +12,9 @@
     "implementation-stats": "./bin/implementation-stats"
   },
   "scripts": {
-    "test": "make test",
+    "test": "make test ; npm run test-australia",
     "test-browser": "make test-browser",
+    "test-australia": "TZ=Australia/Sydney make test",
     "lint": "make lint",
     "watch": "make watch",
     "build": "make build",
